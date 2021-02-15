@@ -1,0 +1,66 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.songRow {
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.songRow:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.songRow:hover .songRow__buttons {
+  display: flex;
+}
+
+.songRow__info {
+  margin-left: 20px;
+  flex: 0.9;
+}
+
+.songRow__info > h1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.songRow__info > p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: white;
+}
+
+.songRow__album {
+  height: 40px;
+  width: 40px;
+}
+
+.songRow > h5 {
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.songRow .songRow__buttons {
+  display: none;
+}
+
+.songRow__like {
+  margin-right: 5px;
+}
+
+.songRow__like:hover,
+.songRow__play:hover {
+  color: #1ed15e;
+  transition: 200ms transform ease-in;
+  transform: scale(1.5);
+}
+.songRow__play {
+  margin-left: 10px;
+}

@@ -1,0 +1,103 @@
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body {
+  flex: 0.8;
+  height: 100vh;
+  padding: 30px;
+  color: white;
+  overflow-y: overlay;
+  background: #f0c27b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #4b1248,
+    #f0c27b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4b1248,
+    #f0c27b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding-bottom: 85px;
+}
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body__info > img {
+  margin: 0 20px;
+  width: 20vw;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__infoText {
+  flex: 1;
+}
+.body__favouriteSelected {
+  color: #1ed15e;
+  cursor: pointer;
+}
+
+.body__favouriteNotSelected {
+  color: white;
+  cursor: pointer;
+}
+
+/* .body__favouriteNotSelected:hover {
+  color: #1ed15e;
+  cursor: pointer;
+} */
+.body__infoText > h2 {
+  font-size: 68px;
+  margin-bottom: 10px;
+}
+
+.body__infoText > p {
+  font-size: 16px;
+}
+
+.body__infoText p {
+  margin-top: 10px;
+}
+
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__shuffle:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+.body__shuffle {
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #1ed15e;
+}
+
+.body__songs {
+  z-index: 1;
+  margin: 20px -30px;
+}
+
+.body__background {
+  position: absolute;
+  top: 13vh;
+  right: 0;
+  opacity: 0.4;
+  height: 80%;
+  width: 80%;
+  background-color: black;
+}
